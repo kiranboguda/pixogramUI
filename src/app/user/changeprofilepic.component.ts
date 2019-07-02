@@ -15,9 +15,9 @@ export class ChangeProfilePicComponent implements OnInit {
     'Authorization': 'Bearer ' + localStorage.getItem("jwtToken"),
   });
 
-  getUserDetailsUrl = "http://localhost:8924/api/user/?id=" + localStorage.getItem("userId");
-  imageMetadataUrl = 'http://localhost:8924/api/imagemetadata/{userId}';
-  updateProfilePicUrl = 'http://localhost:8924/api/user/updateprofilepic/';
+  getUserDetailsUrl = "http://localhost:8060/api/user/?id=" + localStorage.getItem("userId");
+  imageMetadataUrl = 'http://localhost:8060/api/imagemetadata/{userId}';
+  updateProfilePicUrl = 'http://localhost:8060/api/user/updateprofilepic/';
 
   currentProfilePic: string;
   availableImages: string[] = [];
