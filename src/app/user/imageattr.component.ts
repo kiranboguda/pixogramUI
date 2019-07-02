@@ -14,7 +14,7 @@ export class ImageAttrComponent implements OnInit {
 
   @Input() imageObj: ImageObject;
 
-  imageMetadataUpdateUrl = 'http://localhost:8924/api/imagemetadata/update?'
+  imageMetadataUpdateUrl = 'http://localhost:8060/api/imagemetadata/update?'
 
   imageObject: ImageObject[] = [];
 
