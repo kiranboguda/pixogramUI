@@ -11,8 +11,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class EditImageAttrComponent implements OnInit {
 
-  imageMetadataGetUrl = 'http://localhost:8924/api/imagemetadata/{id}';
-  imageMetadataUpdateUrl = 'http://localhost:8924/api/imagemetadata/update?'
+  imageMetadataGetUrl = 'http://localhost:8060/api/imagemetadata/{id}';
+  imageMetadataUpdateUrl = 'http://localhost:8060/api/imagemetadata/update?'
 
   imageObject: ImageObject[] = [];
   fileId: string = "";
