@@ -17,11 +17,11 @@ export class UserHomeComponent implements OnInit {
     'Authorization': 'Bearer ' + localStorage.getItem("jwtToken"),
   });
 
-  getUserDetailsUrl = "http://localhost:8924/api/user/?id=" + localStorage.getItem("userId")
-  getProfilePictureUrl = "http://localhost:8924/api/downloadFile/"
-  getFriendsUrl = 'http://localhost:8924/api/friends/user/?userid=' + localStorage.getItem("userId")
-  getFriendCommentNumUrl = 'http://localhost:8924/api/imagecomments/recentcommentcount/?userid='
-  getFriendImageNumUrl = 'http://localhost:8924/api/imagemetadata/recentuploadcount/?userid='
+  getUserDetailsUrl = "http://localhost:8060/api/user/?id=" + localStorage.getItem("userId")
+  getProfilePictureUrl = "http://localhost:8060/api/downloadFile/"
+  getFriendsUrl = 'http://localhost:8060/api/friends/user/?userid=' + localStorage.getItem("userId")
+  getFriendCommentNumUrl = 'http://localhost:8060/api/imagecomments/recentcommentcount/?userid='
+  getFriendImageNumUrl = 'http://localhost:8060/api/imagemetadata/recentuploadcount/?userid='
 
   fullName: string;
   profilePictureUri: string;
