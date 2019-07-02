@@ -16,8 +16,8 @@ export class SignupComponent {
     })
   };
 
-  signupUrl = "http://localhost:8924/api/auth/signup";
-  checkUsernameUrl = "http://localhost:8924/api/user/checkusername/?username="
+  signupUrl = "http://localhost:8060/api/auth/signup";
+  checkUsernameUrl = "http://localhost:8060/api/user/checkusername/?username="
   usernameInUse = null;
 
   username: string;
