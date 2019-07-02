@@ -13,8 +13,8 @@ import { ImageAttrService } from './imageattr.service';
 })
 export class UploadComponent implements OnInit {
 
-  uploadFileUrl = 'http://localhost:8924/api/uploadFile';
-  imageMetadataUrl = 'http://localhost:8924/api/imagemetadata'
+  uploadFileUrl = 'http://localhost:8060/api/uploadFile';
+  imageMetadataUrl = 'http://localhost:8060/api/imagemetadata'
 
   uploadForm: FormGroup;
   imageObject: ImageObject[] = [];
