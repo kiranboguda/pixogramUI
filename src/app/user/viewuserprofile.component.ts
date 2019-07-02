@@ -27,8 +27,8 @@ export class ViewUserProfileComponent implements OnInit {
     'Authorization': 'Bearer ' + localStorage.getItem("jwtToken"),
   });
 
-  imageMetadataUrl = 'http://localhost:8924/api/imagemetadata/{userId}'
-  downloadImageUrl = 'http://localhost:8924/api/downloadFile/'
+  imageMetadataUrl = 'http://localhost:8060/api/imagemetadata/{userId}'
+  downloadImageUrl = 'http://localhost:8060/api/downloadFile/'
 
   profileUserId: string;
   tiles: Tile[] = [];
