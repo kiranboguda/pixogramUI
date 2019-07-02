@@ -21,9 +21,9 @@ export class FriendsComponent implements OnInit {
     'Authorization': 'Bearer ' + localStorage.getItem("jwtToken"),
   });
 
-  getFriendsUrl = 'http://localhost:8924/api/friends/user/?userid='
-  getFriendDetailsUrl = 'http://localhost:8924/api/user/?id='
-  removeFriendUrl = 'http://localhost:8924/api/friends/delete/?'
+  getFriendsUrl = 'http://localhost:8060/api/friends/user/?userid='
+  getFriendDetailsUrl = 'http://localhost:8060/api/user/?id='
+  removeFriendUrl = 'http://localhost:8060/api/friends/delete/?'
 
   friendIds: string[] = [];
   friendDetails: FriendDetails[] = [];
